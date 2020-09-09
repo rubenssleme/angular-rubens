@@ -9,7 +9,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 import { LiveListComponent } from './views/home/live-list/live-list.component';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { LiveListComponent } from './views/home/live-list/live-list.component';
     LiveListComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

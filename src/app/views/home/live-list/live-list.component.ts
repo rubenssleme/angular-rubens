@@ -17,6 +17,7 @@ export class LiveListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLives();
+    // obtendo as lives no console.
   }
 
   getLives() {

@@ -9,19 +9,23 @@ import { LiveFormDialogComponent } from './live-form-dialog/live-form-dialog.com
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
-  ngOnInit(): void {  }
+  ngOnInit() {
+  }
 
   addLive(): void {
     const dialogRef = this.dialog.open(LiveFormDialogComponent, {
-     minWidth: '400px',
-      
+      // maxHeight: '95vh',
+      minWidth: '400px',
+      // width: '25vw',
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-     
+      // window.location.reload();
     });
   }
 

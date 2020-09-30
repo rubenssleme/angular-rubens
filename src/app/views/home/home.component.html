@@ -4,8 +4,7 @@
     </button>
     <span>Agenda Lives<mat-icon>date_range</mat-icon></span>
     <span class="example-spacer"></span>
-    <button mat-raised-button color="primary" aria-label="Example icon-button with heart icon">
-        <mat-icon>add</mat-icon>Live
+    <button mat-raised-button (click)="addLive()" ><mat-icon>add</mat-icon>Live
     </button>
 </mat-toolbar>
 <app-live-list></app-live-list>
